@@ -72,7 +72,7 @@
   }
 </script>
 
-<div class="p-4">
+<div class="p-4 h-full dark:bg-gray-900 dark:text-white">
   <h2 class="text-xl font-bold mb-4">Settings</h2>
   
   <div class="mb-6">
@@ -81,7 +81,7 @@
       type="text"
       bind:value={importUrl}
       placeholder="MyAnimeList/AniList URL"
-      class="w-full p-2 border rounded mb-2"
+      class="w-full p-2 border-gray-500 border-2 dark:bg-gray-700 rounded mb-2"
     />
     <button
       on:click={importAnimeList}
@@ -93,11 +93,11 @@
   </div>
 
   <div class="mb-6">
-    <h3 class="font-semibold mb-2">Theme</h3>
+    <h3 class="font-semibold mb-2 ">Theme</h3>
     <select
       bind:value={selectedTheme}
       on:change={() => handleThemeChange(selectedTheme)}
-      class="w-full p-2 border rounded"
+      class="w-full p-2 border-gray-500 border-2 rounded dark:bg-gray-700"
     >
       <option value="">Select a theme</option>
       <option value="neko">Neko Characters</option>
